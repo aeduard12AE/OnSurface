@@ -1,30 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>На Поверхности</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>На Поверхности — дневник разработки</title>
   <meta name="robots" content="noindex, nofollow">
-  <style>
-    body{
-      margin:0;
-      background:#0f1112;
-      color:#e6e2dc;
-      font:16px/1.6 system-ui, sans-serif;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      height:100vh;
-      text-align:center;
-    }
-    .wrap{max-width:520px;padding:20px}
-    h1{font-weight:500}
-    p{color:#a7a29a}
-  </style>
+  <link rel="stylesheet" href="/OnSurface/assets/css/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <h1>Работа в процессе</h1>
-    <p>Сайт будет открыт позже.</p>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <h1>На Поверхности</h1>
+        <div class="byline">Соло-разработка • «Бессистемное Мышление»</div>
+      </div>
+      <nav class="nav">
+        <a href="/OnSurface/support.html">Поддержать</a>
+        <a href="/OnSurface/feedback.html">Заметка</a>
+        <span class="lang">
+          <a class="active" href="/OnSurface/">RU</a>
+          <a href="/OnSurface/en/">EN</a>
+        </span>
+      </nav>
+    </header>
+
+    <section class="block hero">
+      <div>
+        <h2>О проекте</h2>
+        <p>
+          Нишевая сюжетная RPG о быте людей в трудных обстоятельствах: псевдо-средневековье,
+          меланхолия, иногда глупые шутки, моральные выборы, экзистенциальные и социальные вопросы.
+        </p>
+        <p class="muted">
+          Визуально и по боёвке — сознательно просто. Главное — история, последствия и собственный лор.
+        </p>
+      </div>
+      <img src="/OnSurface/assets/img/Start_Hintergrund.jpg" alt="Начало истории">
+    </section>
+
+    <section class="block">
+      <h2>Дневник разработчика</h2>
+
+      <div class="post-item">
+        <div class="muted">—</div>
+        <h3 style="margin:6px 0 6px;">Devlog #0 — самопрезентация</h3>
+        <p class="muted" style="margin:0;">
+          (сюда вставим короткий текст от тебя — 8–12 строк)
+        </p>
+      </div>
+
+      <div data-posts data-initial="5">
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+      </div>
+
+      <div style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+        <button class="btn" data-load-more>Показать больше</button>
+        <span class="muted" style="font-size:13px;" data-load-note></span>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Ожидание</h2>
+      <p class="muted">
+        Этот фрагмент относится к финалу истории и не входит в демо.
+        Он здесь как напоминание о том, куда всё в итоге движется.
+      </p>
+      <img
+        src="/OnSurface/assets/img/Lift.png"
+        alt="Ожидание финала"
+        style="width:100%;border-radius:14px;border:1px solid var(--line);display:block;margin-top:12px;"
+      >
+    </section>
   </div>
+
+  <div class="floating-support">
+    <a href="/OnSurface/support.html">🖤 Поддержать</a>
+  </div>
+
+  <script src="/OnSurface/assets/js/main.js"></script>
 </body>
 </html>
+
