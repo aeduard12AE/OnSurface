@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Заметка — На Поверхности</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="assets/css/style.css?v=7">
+</head>
+<body class="feedback-bg">
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <h1>Заметка</h1>
+        <div class="byline">Сообщение увидит только автор</div>
+      </div>
 
+      <nav class="nav">
+        <a href="/OnSurface/">← На главную</a>
+        <a href="/OnSurface/support.html">Поддержать</a>
+      </nav>
+    </header>
+
+    <section class="block">
+      <h2>О чём можно написать</h2>
+      <p class="muted">
+        Ошибка, опечатка, странное поведение, идея, впечатление от демо — всё подходит.
+        Если хочешь получить ответ — оставь контакт. Если нет — тоже нормально.
+      </p>
+
+      <form action="https://formspree.io/f/mkorbogy" method="POST">
+        <p class="muted" style="margin:10px 0 6px;">Тема (необязательно)</p>
+        <input
+          name="subject"
+          type="text"
+          placeholder="Например: баг / опечатка / мысль после сцены"
+          style="width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--text);"
+        >
+
+        <p class="muted" style="margin:14px 0 6px;">Сообщение</p>
+        <textarea
+          name="message"
+          required
+          rows="8"
+          placeholder="Напиши как есть. Можно коротко."
+          style="width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--text);resize:vertical;"
+        ></textarea>
+
+        <p class="muted" style="margin:14px 0 6px;">Контакт для ответа (необязательно)</p>
+        <input
+          type="email"
+          name="email"
+          placeholder="email (если хочешь ответ)"
+          style="width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--text);"
+        >
+
+        <div style="display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap;">
+          <button class="btn primary" type="submit">Отправить</button>
+          <span class="muted" style="font-size:13px;">
+            Ничего не публикуется на сайте
+          </span>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
