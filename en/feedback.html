@@ -1,63 +1,63 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Заметка — На Поверхности</title>
+  <title>Note — On the Surface</title>
   <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="assets/css/style.css?v=7">
+  <link rel="stylesheet" href="/OnSurface/assets/css/style.css?v=9">
 </head>
 <body class="feedback-bg">
   <div class="container">
     <header class="header">
       <div class="brand">
-        <h1>Заметка</h1>
-        <div class="byline">Сообщение увидит только автор</div>
+        <h1>Note</h1>
+        <div class="byline">Only the author will see your message</div>
       </div>
 
       <nav class="nav">
-        <a href="/OnSurface/">← На главную</a>
-        <a href="/OnSurface/support.html">Поддержать</a>
+        <a href="/OnSurface/en/">← Back</a>
+        <a href="/OnSurface/en/support.html">Support</a>
       </nav>
     </header>
 
     <section class="block">
-      <h2>О чём можно написать</h2>
+      <h2>What you can write about</h2>
       <p class="muted">
-        Ошибка, опечатка, странное поведение, идея, впечатление от демо — всё подходит.
-        Если хочешь получить ответ — оставь контакт. Если нет — тоже нормально.
+        A bug, a typo, odd behavior, an idea, an impression after the demo—anything is welcome.
+        If you want a reply, leave a contact. If not, that’s fine too.
       </p>
 
       <form action="https://formspree.io/f/mkorbogy" method="POST">
-        <p class="muted" style="margin:10px 0 6px;">Тема (необязательно)</p>
+        <p class="muted" style="margin:10px 0 6px;">Subject (optional)</p>
         <input
           name="subject"
           type="text"
-          placeholder="Например: баг / опечатка / мысль после сцены"
+          placeholder="For example: bug / typo / thought after a scene"
           style="width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--text);"
         >
 
-        <p class="muted" style="margin:14px 0 6px;">Сообщение</p>
+        <p class="muted" style="margin:14px 0 6px;">Message</p>
         <textarea
           name="message"
           required
           rows="8"
-          placeholder="Напиши как есть. Можно коротко."
+          placeholder="Write it as it is. Short is okay."
           style="width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--text);resize:vertical;"
         ></textarea>
 
-        <p class="muted" style="margin:14px 0 6px;">Контакт для ответа (необязательно)</p>
+        <p class="muted" style="margin:14px 0 6px;">Contact for a reply (optional)</p>
         <input
           type="email"
           name="email"
-          placeholder="email (если хочешь ответ)"
+          placeholder="email (if you want a reply)"
           style="width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--text);"
         >
 
         <div style="display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap;">
-          <button class="btn primary" type="submit">Отправить</button>
+          <button class="btn primary" type="submit">Send</button>
           <span class="muted" style="font-size:13px;">
-            Ничего не публикуется на сайте
+            Nothing is published on the site
           </span>
         </div>
       </form>
@@ -65,3 +65,4 @@
   </div>
 </body>
 </html>
+
