@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>На Поверхности — дневник разработки</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/OnSurface/assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <h1>На Поверхности</h1>
+        <div class="byline">Соло-разработка • «Бессистемное Мышление»</div>
+      </div>
+      <nav class="nav">
+        <a href="/OnSurface/support.html">Поддержать</a>
+        <a href="/OnSurface/feedback.html">Заметка</a>
+        <span class="lang">
+          <a class="active" href="/OnSurface/">RU</a>
+          <a href="/OnSurface/en/">EN</a>
+        </span>
+      </nav>
+    </header>
+
+    <section class="block hero">
+      <div>
+        <h2>О проекте</h2>
+        <p>
+          Нишевая сюжетная RPG о быте людей в трудных обстоятельствах: псевдо-средневековье,
+          меланхолия, иногда глупые шутки, моральные выборы, экзистенциальные и социальные вопросы.
+        </p>
+        <p class="muted">
+          Визуально и по боёвке — сознательно просто. Главное — история, последствия и собственный лор.
+        </p>
+      </div>
+      <img src="/OnSurface/assets/img/hero.jpg" alt="Настроение проекта">
+    </section>
+
+    <section class="block">
+      <h2>Дневник разработчика</h2>
+
+      <div class="post-item">
+        <div class="muted">—</div>
+        <h3 style="margin:6px 0 6px;">Devlog #0 — самопрезентация</h3>
+        <p class="muted" style="margin:0;">
+          (сюда потом вставим короткий текст от тебя — 8–12 строк)
+        </p>
+      </div>
+
+      <div data-posts data-initial="5">
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+        <article class="post-item" data-post><div class="muted">—</div><h3 style="margin:6px 0;">(место для поста)</h3></article>
+      </div>
+
+      <div style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+        <button class="btn" data-load-more>Показать больше</button>
+        <span class="muted" style="font-size:13px;" data-load-note></span>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Фрагменты</h2>
+      <div class="grid">
+        <div class="card"><img src="/OnSurface/assets/img/shot1.jpg" alt="Фрагмент 1"><p class="muted">—</p></div>
+        <div class="card"><img src="/OnSurface/assets/img/shot2.jpg" alt="Фрагмент 2"><p class="muted">—</p></div>
+        <div class="card"><img src="/OnSurface/assets/img/shot3.jpg" alt="Фрагмент 3"><p class="muted">—</p></div>
+        <div class="card"><img src="/OnSurface/assets/img/shot4.jpg" alt="Фрагмент 4"><p class="muted">—</p></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="floating-support">
+    <a href="/OnSurface/support.html">🖤 Поддержать</a>
+  </div>
+
+  <script src="/OnSurface/assets/js/main.js"></script>
+</body>
+</html>
