@@ -1,27 +1,43 @@
-(function () {
-  const list = document.querySelector("[data-posts]");
-  const btn = document.querySelector("[data-load-more]");
-  const note = document.querySelector("[data-load-note]");
-  if (!list || !btn) return;
+(() => {
+  const wrap = document.querySelector('[data-posts]');
+  const btn = document.querySelector('[data-load-more]');
+  const note = document.querySelector('[data-load-note]');
 
-  const items = Array.from(list.querySelectorAll("[data-post]"));
-  const initial = Number(list.getAttribute("data-initial")) || 5;
+  if (!wrap || !btn) return;
+
+  const posts = Array.from(wrap.querySelectorAll('[data-post]'));
+  const initial = parseInt(wrap.getAttribute('data-initial') || '5', 10);
+
+  // если постов нет — прячем кнопку и подпись
+  if (posts.length === 0) {
+    btn.style.display = 'none';
+    if (note) note.textContent = '';
+    return;
+  }
+
+  let shown = 0;
 
   function apply() {
-    items.forEach((el, idx) => el.style.display = idx < initial ? "" : "none");
-    if (items.length <= initial) {
-      btn.style.display = "none";
-      if (note) note.textContent = "Пока что это всё.";
+    posts.forEach((p, i) => {
+      p.style.display = i < shown ? '' : 'none';
+    });
+
+    // если всё показали — прячем кнопку
+    if (shown >= posts.length) {
+      btn.style.display = 'none';
+      if (note) note.textContent = '';
     } else {
-      if (note) note.textContent = `Показано ${initial} из ${items.length}.`;
+      btn.style.display = '';
+      if (note) note.textContent = `Показано ${shown} из ${posts.length}`;
     }
   }
 
-  btn.addEventListener("click", () => {
-    items.forEach(el => el.style.display = "");
-    btn.style.display = "none";
-    if (note) note.textContent = `Показаны все посты: ${items.length}.`;
-  });
-
+  shown = Math.min(initial, posts.length);
   apply();
+
+  btn.addEventListener('click', () => {
+    shown = Math.min(shown + initial, posts.length);
+    apply();
+  });
 })();
+
