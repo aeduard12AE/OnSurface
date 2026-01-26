@@ -38,6 +38,7 @@ a:hover{text-decoration:underline}
 .floating-support a{display:inline-flex;gap:8px;padding:12px 14px;border-radius:999px;border:1px solid rgba(215,199,161,.35);background:rgba(20,23,25,.92);box-shadow:0 10px 30px rgba(0,0,0,.35);color:var(--text)}
 .floating-support a:hover{border-color:var(--accent);text-decoration:none}
 /* HERO BACKGROUND (Start_Hintergrund as mood background) */
+/* HERO BACKGROUND (Start_Hintergrund as mood background) */
 .hero-bg{
   border-radius: 14px;
   border: 1px solid var(--line);
@@ -45,11 +46,20 @@ a:hover{text-decoration:underline}
   padding: 22px 18px;
   min-height: 280px;
 
-  /* Слои: затемнение + картинка */
+  /* Слои: мягкое затемнение + картинка (светлее, чем было) */
   background-image:
-    radial-gradient(1200px 520px at 30% 35%, rgba(15,17,18,0.10), rgba(15,17,18,0.92) 72%, rgba(15,17,18,1) 100%),
-    linear-gradient(to bottom, rgba(15,17,18,0.10), rgba(15,17,18,0.95)),
-    url("/OnSurface/assets/img/Start_Hintergrund.jpg");
+    radial-gradient(
+      1200px 520px at 30% 35%,
+      rgba(15,17,18,0.05),
+      rgba(15,17,18,0.75) 70%,
+      rgba(15,17,18,0.92) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(15,17,18,0.05),
+      rgba(15,17,18,0.85)
+    ),
+    url("../img/Start_Hintergrund.jpg");
 
   background-size: cover, cover, cover;
   background-position: center, center, center;
@@ -61,18 +71,28 @@ a:hover{text-decoration:underline}
 
 
 
+
 /* PAGE BACKGROUND (Support) */
 .page-bg{
   background-color: var(--bg);
 
   background-image:
-    radial-gradient(900px 520px at 50% 30%, rgba(15,17,18,0.20), rgba(15,17,18,0.96) 70%, rgba(15,17,18,1) 100%),
-    linear-gradient(to bottom, rgba(15,17,18,0.35), rgba(15,17,18,1)),
-    url("/OnSurface/assets/img/Lift.png");
+    radial-gradient(
+      900px 520px at 50% 30%,
+      rgba(15,17,18,0.10),
+      rgba(15,17,18,0.80) 70%,
+      rgba(15,17,18,0.95) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(15,17,18,0.25),
+      rgba(15,17,18,0.95)
+    ),
+    url("../img/Lift.jpg");
 
   background-size: cover, cover, cover;
   background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-attachment: fixed, fixed, fixed; /* чтобы было “как фон” */
+  background-attachment: fixed, fixed, fixed;
 }
 
