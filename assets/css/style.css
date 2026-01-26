@@ -142,3 +142,10 @@ a:hover{text-decoration:underline}
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-attachment: fixed, fixed, fixed;
 }
+/* disabled button (e.g., PayPal later) */
+.btn-disabled{
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+  border-color: var(--line);
+}
