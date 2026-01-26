@@ -1,0 +1,39 @@
+:root{
+  --bg:#0f1112;
+  --panel:#141719;
+  --text:#e6e2dc;
+  --muted:#a7a29a;
+  --line:#2a2f33;
+  --accent:#d7c7a1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:980px;margin:0 auto;padding:28px 18px 96px}
+.header{display:flex;gap:14px;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:22px}
+.brand{display:flex;flex-direction:column;gap:6px}
+.brand h1{margin:0;font-size:26px}
+.byline{color:var(--muted);font-size:13px}
+.nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;font-size:14px}
+.lang a{padding:6px 8px;border:1px solid var(--line);border-radius:10px}
+.lang a.active{border-color:rgba(215,199,161,.45);background:rgba(215,199,161,.08)}
+.block{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
+@media (max-width:860px){.hero{grid-template-columns:1fr}}
+.hero img{width:100%;border-radius:14px;border:1px solid var(--line);display:block}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media (max-width:860px){.grid{grid-template-columns:1fr}}
+.card img{width:100%;border-radius:14px;border:1px solid var(--line);display:block}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:transparent;color:var(--text);padding:10px 14px;border-radius:12px;cursor:pointer}
+.btn:hover{border-color:var(--accent);text-decoration:none}
+.btn.primary{background:rgba(215,199,161,.10);border-color:rgba(215,199,161,.35)}
+.floating-support{position:fixed;right:16px;bottom:16px;z-index:999}
+.floating-support a{display:inline-flex;gap:8px;padding:12px 14px;border-radius:999px;border:1px solid rgba(215,199,161,.35);background:rgba(20,23,25,.92);box-shadow:0 10px 30px rgba(0,0,0,.35);color:var(--text)}
+.floating-support a:hover{border-color:var(--accent);text-decoration:none}
